@@ -13,7 +13,7 @@ origin=`cat $file|wc -l`
 echo "\n\tFilename : $file \tNo. of lines in file : $origin\n"
 sleep 2
 read -p "        How many subjects are there : " b
-z=`du -s final|awk '{print $1}'`
+z=`du -sh final|awk '{print $1}'`
 while [ $b -gt 0 ];
 do
      read -p "        Enter subject code to search for : " search

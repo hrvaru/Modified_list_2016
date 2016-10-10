@@ -1,3 +1,4 @@
+set -x
 manual (){
 clear
 chmod +x $0
@@ -163,3 +164,4 @@ while [ 0 ];
           print_menu
           response
       done
+set +x
